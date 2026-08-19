@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+  Support page for the "Foto Plus POS" Clover application.
+
+  Exists because Clover's app submission requires a Support Website URL.
+  Source of truth is the POS repo under legal/; published from here.
+
+  Deliberately says nothing about how the POS works internally. This page is
+  on the open web; the audience is a Clover reviewer, not staff.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support &mdash; Foto Plus POS</title>
+<style>
+  body { font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: #222; max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 36px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 32px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .box { background: #f7f9fb; border-left: 3px solid #0b5cab; padding: 14px 18px; margin: 24px 0; }
+  table { border-collapse: collapse; margin-top: 8px; }
+  td { padding: 6px 24px 6px 0; vertical-align: top; }
+  td.k { color: #666; white-space: nowrap; }
+  footer { margin-top: 56px; color: #666; font-size: 14px; border-top: 1px solid #e5e5e5; padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<h1>Foto Plus POS</h1>
+<div class="meta">Support &amp; contact information</div>
+
+<div class="box">
+  <strong>This is a private application.</strong> Foto Plus POS is not listed on the Clover
+  App Market and cannot be installed by any merchant other than Foto Plus Ltd. It connects
+  Foto Plus Ltd's own point-of-sale software to Foto Plus Ltd's own Clover payment terminal.
+</div>
+
+<h2>What the application does</h2>
+<p>
+  It reads completed orders and payments from the Clover terminal so that card sales appear
+  alongside cash sales in the shop's own daily takings, and it highlights any card payment
+  taken on the terminal that was not recorded in the point-of-sale system. It also reconciles
+  stock counts between the two systems.
+</p>
+<p>
+  It uses read-only Clover API permissions. It does not create, modify or delete anything in
+  Clover, and it does not process payments.
+</p>
+
+<h2>Getting help</h2>
+<table>
+  <tr><td class="k">Email</td>
+      <td><a href="mailto:fotoplusltd@gmail.com">fotoplusltd@gmail.com</a></td></tr>
+  <tr><td class="k">Company</td>
+      <td>Foto Plus Ltd, London, United Kingdom</td></tr>
+</table>
+<p>
+  Email is the fastest route and is monitored during shop opening hours. Please include the
+  date and approximate time of the transaction in question.
+</p>
+
+<h2>Common questions</h2>
+<ul>
+  <li><strong>A card sale is missing from the takings.</strong> The application reads from
+      Clover on a schedule rather than instantly, so a very recent sale may not have been
+      picked up yet.</li>
+  <li><strong>Removing the application.</strong> Uninstalling it from the Clover dashboard
+      immediately revokes its access. No data in Clover is affected, because the application
+      never writes to Clover.</li>
+</ul>
+
+<h2>Legal</h2>
+<ul>
+  <li><a href="privacy.html">Privacy Policy</a></li>
+  <li><a href="eula.html">End User Licence Agreement</a></li>
+</ul>
+
+<footer>
+  Foto Plus Ltd &middot; London &middot; United Kingdom &middot;
+  <a href="mailto:fotoplusltd@gmail.com">fotoplusltd@gmail.com</a>
+</footer>
+
+</body>
+</html>
