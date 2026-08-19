@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+  Privacy policy for the "Foto Plus POS" Clover application.
+
+  WHY THIS FILE LIVES HERE BUT IS NOT PUBLISHED FROM HERE
+  ------------------------------------------------------
+  This repo is the source of truth for the text, so it is versioned alongside
+  the code whose behaviour it describes. It must NOT be published via GitHub
+  Pages from this repository: docs/ contains supplier pricing, equipment
+  lists, internal network paths and setup guides, and enabling Pages on this
+  repo would put all of it on the public web.
+
+  Publish by copying this file into the separate public repo that holds only
+  the legal pages. See legal/README.md.
+
+  IF THE APP'S BEHAVIOUR CHANGES, THIS CHANGES
+  --------------------------------------------
+  The permission list below mirrors the Requested Permissions on the Clover
+  app exactly. If a permission is added there (Customers, Employees, or any
+  WRITE scope), this page is wrong until it is updated, and a privacy policy
+  that understates what is collected is worse than none.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Foto Plus POS</title>
+<style>
+  body { font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: #222; max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 36px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 32px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; font-size: 14px; }
+  .box { background: #f7f9fb; border-left: 3px solid #0b5cab; padding: 14px 18px; margin: 24px 0; }
+  footer { margin-top: 56px; color: #666; font-size: 14px; border-top: 1px solid #e5e5e5; padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<div class="meta">Foto Plus POS &mdash; Clover application<br>Last updated 19 August 2026</div>
+
+<div class="box">
+  <strong>Foto Plus POS is a private application.</strong> It is not available on the
+  Clover App Market and cannot be installed by any merchant other than Foto Plus Ltd.
+  It exists solely to connect Foto Plus Ltd's own point-of-sale software to Foto Plus
+  Ltd's own Clover payment terminal. There is no third-party user base.
+</div>
+
+<h2>Who we are</h2>
+<p>
+  Foto Plus Ltd, London, United Kingdom. For any question about this policy or about
+  data handled by this application, contact
+  <a href="mailto:fotoplusltd@gmail.com">fotoplusltd@gmail.com</a>.
+</p>
+
+<h2>What data the application accesses</h2>
+<p>
+  The application uses Clover's REST API with <strong>read-only</strong> permissions.
+  It does not create, modify or delete anything in Clover. Specifically it reads:
+</p>
+<ul>
+  <li><strong>Orders</strong> &mdash; line items, order types, discounts, totals and timestamps
+      of orders created on the Clover terminal.</li>
+  <li><strong>Payments</strong> &mdash; payment amounts, tender types (for example card or cash)
+      and refunds.</li>
+  <li><strong>Inventory</strong> &mdash; item names, categories and modifiers, used to keep stock
+      counts aligned between the two systems.</li>
+  <li><strong>Merchant</strong> &mdash; the business name, address, currency, timezone and
+      opening hours, needed to interpret and date the above correctly.</li>
+</ul>
+
+<h2>What the application does not access</h2>
+<ul>
+  <li><strong>Card numbers, cardholder names and any other cardholder data.</strong>
+      These are never exposed to the application. Card data is handled entirely by
+      Clover and its payment processor, and never reaches Foto Plus systems.</li>
+  <li><strong>Clover customer records.</strong> The Customers permission is not
+      requested.</li>
+  <li><strong>Employee records.</strong> The Employees permission is not requested.
+      Where an order records who took it, only the name shown on the order is stored.</li>
+</ul>
+
+<h2>Why the data is used</h2>
+<ul>
+  <li>To show card sales taken on the terminal alongside cash sales in the shop's own
+      daily takings figures.</li>
+  <li>To identify card payments taken on the terminal that were not recorded in the
+      shop's point-of-sale system, so the day's till can be reconciled.</li>
+  <li>To keep a single stock count across both systems.</li>
+</ul>
+<p>
+  The data is used for the internal business administration of Foto Plus Ltd and for
+  no other purpose.
+</p>
+
+<h2>Where the data is stored</h2>
+<p>
+  On a server owned and operated by Foto Plus Ltd, located on the business premises in
+  the United Kingdom. The data is not held in any third-party cloud service, is not
+  transferred outside the UK, and is not transmitted to any other organisation.
+</p>
+
+<h2>Who the data is shared with</h2>
+<p>
+  <strong>Nobody.</strong> The data is not sold, rented, shared, or disclosed to any third
+  party. It is not used for advertising, profiling, or analytics of any kind. Access is
+  limited to Foto Plus Ltd staff who need it to run the business.
+</p>
+
+<h2>How long it is kept</h2>
+<p>
+  Order and payment records are retained for as long as required for accounting and tax
+  purposes under UK law, and then deleted. Authentication tokens are deleted immediately
+  when the application is uninstalled or disconnected.
+</p>
+
+<h2>Security</h2>
+<ul>
+  <li>API credentials and authentication tokens are stored in the application's database,
+      never in source code or version control.</li>
+  <li>Access to the application requires a per-user login.</li>
+  <li>The connection to Clover uses HTTPS throughout.</li>
+</ul>
+
+<h2>Uninstalling</h2>
+<p>
+  Uninstalling the application from the Clover dashboard immediately revokes its access.
+  Foto Plus Ltd deletes the stored authentication tokens on disconnection. Historical
+  order data already copied into the point-of-sale system is retained under the accounting
+  retention period described above.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  Under the UK GDPR and the Data Protection Act 2018 you may request access to, correction
+  of, or erasure of personal data held about you, and may complain to the Information
+  Commissioner's Office (<a href="https://ico.org.uk">ico.org.uk</a>). Requests should be
+  sent to <a href="mailto:fotoplusltd@gmail.com">fotoplusltd@gmail.com</a>.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  Any change to the data this application accesses will be reflected here before the change
+  takes effect, and the date at the top of this page will be updated.
+</p>
+
+<footer>
+  Foto Plus Ltd &middot; London &middot; United Kingdom &middot;
+  <a href="mailto:fotoplusltd@gmail.com">fotoplusltd@gmail.com</a>
+</footer>
+
+</body>
+</html>
